@@ -1,0 +1,20 @@
+Explain what is declaration, definition and initialization in JS?
+DECLARATION
+Declaration is creating a variable in JavaScript. You declare a variable with the keywords var, let and const .
+Var- declares a variable, optionally initializing it to a value.
+For example   var a;
+                        Var plate;
+Let -declares a block-scoped, local variable initializing it to a value.
+      For example let x;
+                               Let x=5;
+
+Const-declares a blocked-scoped, read-only named constant.
+     For example  const y=’plates’;
+DEFINITION
+Define ()->a module that can be returned by require ,in case you don’t  have an AMD loader . define is available in all modules like syntax and parameter.
+Also require() can be used to obtain defined with define ().
+Example in syntax:
+Define (name, factory function)                                                                                                                                                                                      INITIALIZATION
+Initialization means assigning an initial value to a variable. So undefined is the initial value of a declared variable.
+
+
