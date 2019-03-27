@@ -1,0 +1,65 @@
+newtab?ie=UTF-8:8 SW registered
+var a="apple";
+undefined
+typeof a
+"string"
+var b =Number(a);
+undefined
+b
+NaN
+var c="100";
+undefined
+var d=Number(c);
+undefined
+d
+100
+typeof d
+"number"
+var a ="100";
+undefined
+var b = a*2;
+undefined
+b
+200
+"100"==100
+true
+// this is a single line comment
+undefined
+/* this is a multiline
+c
+VM384:1 Uncaught SyntaxError: Invalid or unexpected token
+/* this is a
+multiline
+coment */
+undefined
+var car = [] // car to be used for fee
+calculation
+VM482:2 Uncaught ReferenceError: calculation is not defined
+    at <anonymous>:2:1
+(anonymous) @ VM482:2
+var car = [] // car to be used for fee calculation
+undefined
+var car = []; /* list of car to be used for parking
+fee calculation
+*/
+undefined
+var amount = 101;
+if(amount> 100){
+let amount=200;
+amount=amount*2;
+console.log(amount);
+}
+console.log(amount);
+VM820:5 400
+VM820:7 101
+undefined
+var amount = 101;
+if(amount> 100){
+var amount=200;
+amount=amount*2;
+console.log(amount);
+}
+console.log(amount);
+VM833:5 400
+VM833:7 400
+undefined

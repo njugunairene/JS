@@ -1,0 +1,19 @@
+
+fruit_list=["mango","lemon","melon","apple","grape","pineple"];
+
+function printfruit(fruit_list)
+{
+console.log(fruits_list);
+}
+
+(6) ["mango", "lemon", "melon", "apple", "grape", "pineple"]
+
+
+var fruit_index = prompt("from fruits_list call 0-6");
+
+console.log(fruit_list[fruit_index]);
+
+function callFruit(fruit_list,fruit_index)
+
+{alert(fruit_list[fruit_index]);}
+
