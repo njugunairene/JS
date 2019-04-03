@@ -1,0 +1,18 @@
+var fruits= {"oranges": 30, "kiwi": 40, "mango": 30}
+	
+  var quant=2;
+
+     var price=fruits["kiwi"]*quant;
+        //undefined
+    
+      price= 80
+
+k= (quant+" "+ "kiwi" +" "+ "for kesh"+ " "+ price);
+
+	function calculateFruitcost (k) {
+ return k;}
+	//undefined
+
+calculateFruitcost (k)
+
+	"2 kiwi for kesh 80"
