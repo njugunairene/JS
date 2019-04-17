@@ -1,17 +1,20 @@
-class kiosk{
-  constructor(fruits){
-    this.fruits=fruits || [];    
-  }
-  addFruit(fruit){
-    this.fruits.push(fruit);
-  }
-  setFruit(fruit){
-    this.addFruit(fruit);
-  }
-  getFruit(){
-    return this.fruits;
-  }
+class Kiosk {
+constructor(fruits){
+this.fruits = fruits || [];
 }
-var kiosk = new kiosk(['banana']);
-kiosk.setFruit('kiwi')
-console.log(kiosk.getFruit());
+addFruit(fruit) {
+this.fruits.push(fruit);
+}
+
+setFruit(fruit) {
+    this.addFruit(fruit);
+}
+
+getFruits() {
+    return this.fruits;
+}
+}
+
+var kiosk = new Kiosk(['kiwi']);
+kiosk.setFruit("melon")
+console.log(kiosk.getFruits());
