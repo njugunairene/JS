@@ -1,0 +1,12 @@
+class kioskCalc{
+  constructor(myFruit,myQuantity){
+    this.fruit = myFruit;
+    this.quantity = myQuantity;
+  }
+  getFruit(){
+    return 2 + " " + this.fruit + " " + "for kshs " + this.quantity;
+  }
+}
+  get: list = new kioskCalc('banana',50)
+  
+console.log(list.getFruit());
