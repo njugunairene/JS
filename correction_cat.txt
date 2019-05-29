@@ -1,0 +1,103 @@
+
+class MumMboga {
+  
+  constructor() {
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers  = [];
+  }
+addProduct(productid,name,price,quantity){
+  var product = {Id:productid,Name:name,Price:price,Quantity:quantity};
+  this.products.push(product)
+  return this.products
+  
+}
+ removeProduct(productid){
+   var myArray = this.products
+   myArray = myArray.filter(function(obj){
+   return obj.Id !== productid;
+   })
+     
+ }
+ updateProduct(productid,name,price,quantity){
+   var myArray = this.products
+   var objIndex = myArray.findIndex((obj => obj.Id == productid));
+   myArray[objIndex].Id = productid
+   myArray[objIndex].Name = name
+   myArray[objIndex].Price = price
+   myArray[objIndex].Quantity = quantity
+   return myArray
+ }
+ getProduct(productid){
+   var myArray = this.products
+   var objIndex = myArray.findIndex((obj => obj.Id == productid));
+   return myArray[objIndex]
+    }
+ getProductCatalog(){
+         return this.products
+ }
+  addTocart(cartId,product,orderQuantity,customerId){
+    var cart = {Id:cartId,Product:product,Quantity:orderQuantity,Cid:customerId};
+    this.carts.push(cart)
+    return this.carts
+  }
+  removeFromCart(productid){
+    var myArray = this.carts
+    myArray = myArray.filter(function(obj){
+    return obj.Id !== productId;
+    })
+     
+  } 
+  createOrder(orderId,cartId){
+    var order = {Order:orderId,Cart:cartId}
+    this.orders.push(order)
+    return this.orders
+  }
+  cancelOrder(orderId){
+    var myArray = this.orders
+    myArray.filter(function(obj){
+      return obj.Order !== orderId
+    })
+  }
+
+ getOrder(orderId){
+    var myArray = this.orders
+    var objIndex = myArray.findIndex((obj => obj.Order == orderId));
+    return myArray[objIndex]
+  }
+  addCustomer(customerId,name,email,address){
+    var customer = {Id:customerId,Name:name,Email:email,Address:address}
+    this.customers.push(customer)
+    return this.customers
+  }
+  removeCustomer(customerId){
+    var myArray = this.customers
+    myArray = myArray.filter(function(obj){
+    return obj.Id !== customerId;
+    })
+     
+  } 
+ 
+ updateCustomer(customerId,name,email,address){
+    var myArray = this.customers
+    var objIndex = myArray.findIndex((obj => obj.Id == customerId));
+   myArray[objIndex].Id = customerId
+    myArray[objectIndex].Name = name
+    myArray[objIndex].Email = email
+    myArray[objIndex].Address = address
+    return myArray
+  } 
+
+    
+}
+
+var mummboga = new MumMboga;
+mummboga.addProduct(1,"arrowroots",10,3)
+mummboga.addProduct(2,"potatoes",20,1)
+ console.log(mummboga.getProduct(2))
+ console.log(mummboga.removeProduct(2))
+console.log(mummboga.updateProduct(1,"kale",37,3))
+ console.log(mummboga.getProductCatalog())
+ console.log(mummboga.addCustomer(5,"irene njoki","Gmaiil.com",45))
+ 
