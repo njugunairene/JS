@@ -1,0 +1,102 @@
+class Mkulima {
+  
+  constructor() {
+    this.farms = [];
+    this.vendors = [];
+    this.products = [];
+    this.orders = [];
+  }
+  
+ addFarm(farmId, name, farmer, phone, address){
+  let farm = {
+    farmId:farmId,
+    name:name,
+    farmer:farmer,
+    phone:phone,
+    address:address
+  }
+  this.farms.push(farm)
+ }
+//     }
+//   removeFarm(farmId){
+//     let Farm = this.getFarm(farmId)
+//     let index = this.farms.indexOf(farm);
+//     this.farms.splice(index,1)
+// }
+
+  updateFarm(farmId,name,farmer,phone,address){
+    let farm = {
+    farmId:farmId,
+    name:name,
+    farmer:farmer,
+    phone:phone,
+    address:address
+  }
+  this.farms.push(farm)
+  }
+  addVendor(vendorId, name, phone){
+    let vendor={
+      vendorId:vendorId,
+      name:name,
+      phone:phone,
+      
+    }
+    this.vendors.push(vendor)
+   
+    }
+  addProduct(productId, name, price){
+    let product={
+      pruductId:productId,
+      name:name,
+      price:price,
+    }
+    this.products.push(product)
+    
+  }
+  updateVendor(vendorId,name,phone){
+    let vendor = {
+    vendorId:vendorId,
+    name:name,   
+    phone:phone,
+    
+  }
+  this.vendors.push(vendor)
+  }
+  updateProduct(productId,name,price){
+    let product = {
+    productId:productId,
+    name:name,
+    price:price, 
+    
+  }
+  this.products.push(product)
+  }
+  removeFarm(farmId){
+    let farm={
+      farmId:farmId,
+    }
+    this.farms.shift(farm)
+    
+    
+  }
+  
+      
+      
+    
+  }
+
+var mkulima1 = new Mkulima();
+mkulima1.addFarm(10,"plotA","irene","0712345678","234")
+console.log(mkulima1.farms)
+mkulima1.updateFarm(10,"plotC","peter","0723456234","987")
+console.log(mkulima1.farms)
+mkulima1.addVendor(23,"Alice","0764378930")
+console.log(mkulima1.vendors)
+mkulima1.addProduct(56,"cabbage",20)
+console.log(mkulima1.products)
+mkulima1.updateVendor(345,"sofia","0723456745")
+console.log(mkulima1.vendors)
+mkulima1.updateProduct(58,"potatoes",60)
+console.log(mkulima1.products)
+mkulima1.removeFarm( "plotA","plotD","plotK")
+console.log(mkulima1.farms)
