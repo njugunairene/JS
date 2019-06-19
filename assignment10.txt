@@ -1,0 +1,19 @@
+var body= document.body
+body.style.backgroundColor="silver"
+var h1 =document.getElementById("title")
+h1 .style.color="green"
+
+var li=document.createElement("li")
+li.innerHTML=("kiwi")
+var  foo= document.createElement("fruList")
+fruList.appendChild(li)
+
+var li=document.createElement("li")
+li.innerHTML=("guvas")
+var  foo= document.createElement("fruList")
+fruList.appendChild(li)
+
+var veg=document.createElement("li")
+li.innerHTML=("cabbage")
+var  veg= document.createElement("vegList")
+vegList.appendChild(li)
