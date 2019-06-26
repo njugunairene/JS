@@ -1,0 +1,39 @@
+
+var colorChange =()=>{
+  var title = document.getElementById("title");
+  title.style.color= title.style.color=="red"? "silver":"red"
+
+};
+setInterval(colorChange,1000);
+
+var fruList = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < fruList .length; i++) {
+  fruList [i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var fruList = this.nextElementSibling;
+    if (fruList.style.maxHeight){
+      fruList.style.maxHeight = null;
+    } else {
+      fruList.style.maxHeight = fruList.scrollHeight + "px";
+    } 
+  });
+}
+
+
+
+var veglist = document.getElementsByClassName("veg");
+var i;
+
+for (i = 0; i < veglist.length; i++) {
+  veglist[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var vegList = this.nextElementSibling;
+    if (vegList.style.display === "block") {
+      vegList.style.display = "none";
+    } else {
+      vegList.style.display = "block";
+    }
+  });
+}
